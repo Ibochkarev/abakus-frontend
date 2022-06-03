@@ -23,7 +23,7 @@ const requireDir = require("require-dir"),
       watch: ["./src/blocks/**/*.{scss,sass}", "./src/styles/**/*.{scss,sass}"],
     },
     scripts: {
-      src: "./src/js/index.js",
+      src: "./src/js/global.js",
       dist: "./docs/js/",
       watch: ["./src/blocks/**/*.js", "./src/js/**/*.js"],
     },

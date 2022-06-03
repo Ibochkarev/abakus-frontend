@@ -1,0 +1,51 @@
+.swiper {
+  &-container-horizontal {
+    .swiper-pagination {
+      position: relative;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: rem(16) 0 0;
+
+      @media (min-width: 992px) {
+        margin: rem(24) 0 0;
+      }
+
+      &-bullet {
+        flex: 1;
+        width: 100%;
+        max-width: unset;
+        height: rem(4);
+        max-width: rem(60);
+        margin: 0 rem(7);
+        background: var(--colorSliderDefault);
+        border-radius: var(--a-borderRadius--default);
+        opacity: 1;
+
+        @media (min-width: 575px) {
+          max-width: rem(110);
+        }
+
+        @media (min-width: 992px) {
+          max-width: rem(200);
+        }
+
+        @media (min-width: 1440px) {
+          max-width: rem(240);
+        }
+
+        &:hover {
+          background: var(--a-color_link);
+          cursor: pointer;
+        }
+
+        &-active,
+        &-active:hover {
+          background: var(--colorSliderActive);
+          cursor: default;
+        }
+      }
+    }
+  }
+}

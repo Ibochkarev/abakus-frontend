@@ -1,13 +1,13 @@
 extends layouts/default
-include helpers/_mixins
 
 block variables
-  - const title = "Главная страница проекта"
+  - const title = "Главная"
+
+block append head
+  link(rel="stylesheet" href="/styles/homepage.css")
 
 block content
-      include ../blocks/modules/header/header.pug
-      include ../blocks/modules/footer/footer.pug
+  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis dolores vero hic illum nobis deleniti ut iusto possimus reiciendis distinctio, saepe doloremque optio, quam sapiente, dolor corporis magni. Et.
 
-block scripts
-  script(defer src="js/vendor.js")
-  script(defer src="js/main.js")
+block append scripts
+  script(defer src="/js/homepage.js")

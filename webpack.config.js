@@ -2,15 +2,15 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-    plugins: [ 
-        new webpack.ProvidePlugin({ 
-            "jQuery": "jquery", 
-            "window.jQuery": "jquery", 
-            "jquery": "jquery", 
-            "window.jquery": "jquery", 
-            "$": "jquery", 
-            "window.$": "jquery" 
-        })  
+    plugins: [
+        new webpack.ProvidePlugin({
+            "jQuery": "jquery",
+            "window.jQuery": "jquery",
+            "jquery": "jquery",
+            "window.jquery": "jquery",
+            "$": "jquery",
+            "window.$": "jquery"
+        })
     ],
     node: {
         fs: "empty",
@@ -18,7 +18,8 @@ module.exports = {
         net: "empty",
     },
     entry: {
-        main: "./src/js/index.js",
+        global: "./src/js/global.js",
+        homepage: "./src/js/homepage.js",
     },
 
     output: {
@@ -59,7 +60,7 @@ module.exports = {
 
     resolve: {
         alias: {
-            "%modules%": path.resolve(__dirname, "src/blocks/modules"),
+            "%sections%": path.resolve(__dirname, "src/blocks/sections"),
             "%components%": path.resolve(__dirname, "src/blocks/components")
         }
     }

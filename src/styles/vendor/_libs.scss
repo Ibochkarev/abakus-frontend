@@ -1,1 +1,9 @@
 @import "import/normalize";
+@import "./node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
+
+@import "./node_modules/swiper/swiper-vars.scss";
+@import "./node_modules/swiper/swiper.scss";
+@import "./node_modules/swiper/modules/pagination/pagination.scss";
+@import "./node_modules/swiper/modules/scrollbar/scrollbar.scss";
+@import "./node_modules/swiper/modules/effect-fade/effect-fade.scss";
+@import "swiper.scss";

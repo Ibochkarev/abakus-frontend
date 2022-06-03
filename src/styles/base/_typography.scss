@@ -1,0 +1,96 @@
+.a-font {
+  @at-root h1,
+    &_h1 {
+    font-size: rem(32);
+    font-weight: 500;
+    line-height: rem(40);
+
+    @media screen and (min-width: 992px) {
+      font-size: rem(56);
+      line-height: rem(64);
+    }
+  }
+
+  @at-root h2,
+    &_h2 {
+    font-size: rem(28);
+    font-weight: 500;
+    line-height: rem(32);
+
+    @media screen and (min-width: 992px) {
+      font-size: rem(48);
+      line-height: rem(56);
+    }
+  }
+
+  @at-root h3,
+    &_h3 {
+    font-size: rem(24);
+    font-weight: 500;
+    line-height: rem(30);
+
+    @media screen and (min-width: 992px) {
+      font-size: rem(40);
+      line-height: rem(44);
+    }
+  }
+
+  @at-root h4,
+    &_h4 {
+    font-size: rem(22);
+    font-weight: 500;
+    line-height: rem(30);
+
+    @media screen and (min-width: 992px) {
+      font-size: rem(32);
+      line-height: rem(40);
+    }
+  }
+
+  @at-root h5,
+    &_h5 {
+    font-size: rem(20);
+    font-weight: 500;
+    line-height: rem(24);
+
+    @media screen and (min-width: 992px) {
+      font-size: rem(36);
+      line-height: rem(44);
+    }
+  }
+
+  @at-root h6,
+    &_h6 {
+    font-size: rem(18);
+    font-weight: 500;
+    line-height: rem(22);
+
+    @media screen and (min-width: 992px) {
+      font-size: rem(32);
+      line-height: rem(40);
+    }
+  }
+
+  &_s {
+    font-size: rem(14);
+    line-height: rem(20);
+
+    @media screen and (min-width: 992px) {
+      font-size: rem(16);
+      line-height: rem(22);
+    }
+  }
+
+  &_button {
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: rem(16);
+  }
+
+  &_link {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: rem(14);
+    text-decoration-line: underline;
+  }
+}

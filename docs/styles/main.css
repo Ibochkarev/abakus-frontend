@@ -1,0 +1,68 @@
+:root {
+  --a-color_text: #000000;
+  --a-color_bg: #fff;
+  --a-color_bg--light-blue: #c3e6f5;
+  --a-color_bg--blue: #29a4dd;
+  --a-color_bg--dark-blue: #171664;
+  --a-color_bg--light-green: #dfefad;
+  --a-color_bg--green: #bade50;
+  --a-color_bg--yellow: #faeb99;
+  --a-color_link: #ff0040;
+  --a-color_link--hover: #e8003a;
+}
+
+:root {
+  --a-padding--x1: 0.25rem;
+  --a-padding--x2: 0.5rem;
+  --a-padding--x3: 0.75rem;
+  --a-padding--x4: 1rem;
+  --a-padding--x5: 1.25rem;
+  --a-padding--x6: 1.5rem;
+  --a-padding--x7: 1.75rem;
+  --a-padding--x8: 2rem;
+  --a-padding--x9: 2.25rem;
+  --a-padding--x10: 2.5rem;
+  --a-padding--x11: 2.75rem;
+  --a-padding--x12: 3rem;
+  --a-padding--x13: 3.25rem;
+  --a-padding--x14: 3.5rem;
+  --a-padding--x15: 3.75rem;
+  --a-padding--x16: 4rem;
+  --a-padding--x17: 4.25rem;
+  --a-padding--x18: 4.5rem;
+  --a-padding--x19: 4.75rem;
+  --a-padding--x20: 5rem;
+}
+
+:root {
+  --a-borderRadius--x4: 4px;
+  --a-borderRadius--x8: 8px;
+  --a-borderRadius--x10: 10px;
+  --a-borderRadius--x12: 12px;
+  --a-borderRadius--x16: 16px;
+  --a-borderRadius--x20: 20px;
+  --a-borderRadius--x24: 24px;
+  --a-borderRadius--x32: 32px;
+  --a-borderRadius--x65: 64px;
+}
+
+@media screen {
+  .px-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pb-0 {
+    padding-bottom: 0;
+  }
+
+  .pt-0 {
+    padding-top: 0;
+  }
+}
+/*# sourceMappingURL=maps/main.css.map */

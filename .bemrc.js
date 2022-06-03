@@ -6,7 +6,7 @@ module.exports = {
                 create: {
                 techs: ["pug", "scss", "js"],
                     levels: {
-                        "src/blocks/modules": {
+                        "src/blocks/sections": {
                             default: true
                         }
                     }
