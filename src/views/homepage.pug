@@ -4,7 +4,7 @@ block variables
   - const title = "Главная"
 
 block append head
-  link(rel="stylesheet" href="/styles/homepage.css")
+  link(rel="stylesheet" href="./styles/homepage.css")
 
 block content
   +section('s-activities', 'white', false)
@@ -27,4 +27,4 @@ block content
     h2.l-section__title.a-font_h2 Часто задаваемые вопросы
 
 block append scripts
-  script(defer src="/js/homepage.js")
+  script(defer src="./js/homepage.js")
