@@ -1,2 +1,2 @@
-import "%sections%/header/header";
-import "%sections%/footer/footer";
+import "%sections%/s_header/s_header";
+import "%sections%/s_footer/s_footer";

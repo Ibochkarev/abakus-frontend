@@ -1,0 +1,50 @@
+.header {
+  &__top {
+    display: none;
+    padding: rem(10) 0;
+    background-color: var(--a-color_bg--alice-blue);
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem(10);
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(45);
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: rem(8);
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      margin-right: rem(16);
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__bottom {
+  }
+}

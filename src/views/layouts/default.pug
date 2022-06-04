@@ -1,4 +1,6 @@
 block variables
+include ../helpers/_mixins
+include ../helpers/_mixins-custom
 
 doctype html
 html(lang="ru")
@@ -28,8 +30,13 @@ html(lang="ru")
 
     block head
       link(rel="stylesheet" href="/styles/global.css")
-  body
-    block content
+
+  body(class=pageClass)
+    include ../../blocks/sections/s_header/s_header.pug
+    .wrapper
+      block content
+
+    include ../../blocks/sections/s_footer/s_footer.pug
     block scripts
       script(defer src="/js/vendor.js")
       script(defer src="/js/global.js")
