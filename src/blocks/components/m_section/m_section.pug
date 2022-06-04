@@ -1,0 +1,8 @@
+//-    section template
+
+mixin section(classname=false, bgColor=false, wide=false)
+  section.l-section(class=classname, class={'l-section--full' : wide}, class=(bgColor) ? `--bg-color_${bgColor}` : '')&attributes(attributes)
+    .l-section__outer(class=`${classname}__outer`)
+      .l-wide.l-section__wrapper(class=`${classname}__wrapper`)
+        if block
+          block

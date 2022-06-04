@@ -7,7 +7,24 @@ block append head
   link(rel="stylesheet" href="/styles/homepage.css")
 
 block content
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis dolores vero hic illum nobis deleniti ut iusto possimus reiciendis distinctio, saepe doloremque optio, quam sapiente, dolor corporis magni. Et.
+  +section('s-activities', 'white', false)
+    h2.l-section__title.a-font_h2 Как занятия помогут вашему ребенку?
+  +section('s-how', 'light-green', false)
+    h2.l-section__title.a-font_h2 Как проходят занятия
+  +section('s-why', 'white', false)
+    h2.l-section__title.a-font_h2 Почему стоит заниматься у нас?
+  +section('s-network', 'white', false)
+    h2.l-section__title.a-font_h2 Международная сеть Абакус Центр
+  +section('s-interesting', 'light-blue', false)
+    h2.l-section__title.a-font_h2 Интересное
+  +section('s-reviews', 'white', false)
+    h2.l-section__title.a-font_h2 Вместо тысячи слов — посмотрите отзывы
+  +section('s-smi', 'white', false)
+    h2.l-section__title.a-font_h2 СМИ о нас
+  +section('s-reviews-yandex', 'light-green', false)
+    h2.l-section__title.a-font_h2 Отзывы
+  +section('s-faq', 'light-blue', false)
+    h2.l-section__title.a-font_h2 Часто задаваемые вопросы
 
 block append scripts
   script(defer src="/js/homepage.js")
