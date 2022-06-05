@@ -4,14 +4,33 @@
 
   // Цвета для фона
   --a-color_bg: #fff;
+
   --a-color_bg--light-blue: #c3e6f5;
+  --a-color_bg--light-blue-lighter: hsla(198, 94%, 93%, 1);
+  --a-color_bg--light-blue-darker: hsla(198, 61%, 79%, 1);
+
   --a-color_bg--alice-blue: #eff4ff;
+
   --a-color_bg--blue: #29a4dd;
+  --a-color_bg--blue-lighter: hsla(199, 83%, 68%, 1);
+  --a-color_bg--blue-darker: hsla(199, 72%, 45%, 1);
+
   --a-color_bg--charged-blue: #27a3dd;
+
   --a-color_bg--dark-blue: #171664;
+  --a-color_bg--dark-blue-lighter: hsla(241, 64%, 33%, 1);
+  --a-color_bg--dark-blue-darker: hsla(241, 64%, 18%, 1);
+
   --a-color_bg--light-green: #dfefad;
+  --a-color_bg--light-green-lighter: hsla(74, 89%, 89%, 1);
+  --a-color_bg--light-green-darker: hsla(74, 65%, 67%, 1);
+
   --a-color_bg--green: #bade50;
+  --a-color_bg--green-lighter: hsla(75, 75%, 69%, 1);
+  --a-color_bg--green-darker: hsla(76, 55%, 52%, 1);
+
   --a-color_bg--yellow: #faeb99;
+
   --a-color_bg--maastricht-blue: #0b2530;
 
   --a-color_link: #ff0040; //Цвет для ссылок

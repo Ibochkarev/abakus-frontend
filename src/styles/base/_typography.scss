@@ -1,8 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Neometric";
+  font-weight: 600;
+}
+
 .a-font {
   @at-root h1,
     &_h1 {
     font-size: rem(32);
-    font-weight: 500;
     line-height: rem(40);
 
     @media screen and (min-width: 992px) {
@@ -14,7 +23,6 @@
   @at-root h2,
     &_h2 {
     font-size: rem(28);
-    font-weight: 500;
     line-height: rem(32);
 
     @media screen and (min-width: 992px) {
@@ -26,7 +34,6 @@
   @at-root h3,
     &_h3 {
     font-size: rem(24);
-    font-weight: 500;
     line-height: rem(30);
 
     @media screen and (min-width: 992px) {
@@ -38,7 +45,6 @@
   @at-root h4,
     &_h4 {
     font-size: rem(22);
-    font-weight: 500;
     line-height: rem(30);
 
     @media screen and (min-width: 992px) {
@@ -50,7 +56,6 @@
   @at-root h5,
     &_h5 {
     font-size: rem(20);
-    font-weight: 500;
     line-height: rem(24);
 
     @media screen and (min-width: 992px) {
@@ -62,7 +67,6 @@
   @at-root h6,
     &_h6 {
     font-size: rem(18);
-    font-weight: 500;
     line-height: rem(22);
 
     @media screen and (min-width: 992px) {
@@ -88,9 +92,13 @@
   }
 
   &_button {
+    font-family: "Neometric";
     font-size: rem(16);
-    font-weight: 500;
-    line-height: rem(16);
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+      font-size: rem(18);
+    }
   }
 
   &_link {

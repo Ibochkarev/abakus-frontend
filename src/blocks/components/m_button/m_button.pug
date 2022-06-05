@@ -1,0 +1,7 @@
+mixin mButton(className, bgColor, typeBtn, text, linkHref, size)
+  if (typeBtn != link)
+    button.a-button.a-font_button(class=(className), class=(bgColor) ? `a-button_color--${bgColor}` : '', class=(size) ? `a-button_${size}` : '')
+      span!= text
+  else
+    a.a-button.a-font_button(class=(className), class=(bgColor) ? `a-button_color--${bgColor}` : '', class=(size) ? `a-button_${size}` : '')(href!=linkHref)
+      span!= text
