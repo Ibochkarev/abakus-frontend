@@ -8,24 +8,24 @@ block append head
 
 block content
   +section('s-activities', 'white', false)
-    h2.l-section__title.a-font_h2 Как занятия помогут вашему ребенку?
+    +m_title('Как занятия помогут вашему ребенку?')
     +mButton('s-activities__btn', 'light-green', 'link', 'Все новости', '')
   +section('s-how', 'light-green', false)
-    h2.l-section__title.a-font_h2 Как проходят занятия
+    +m_title('Как проходят занятия')
   +section('s-why', 'white', false)
-    h2.l-section__title.a-font_h2 Почему стоит заниматься у нас?
+    +m_title('Почему стоит заниматься у нас?')
   +section('s-network', 'white', false)
-    h2.l-section__title.a-font_h2 Международная сеть Абакус Центр
+    +m_title('Международная сеть Абакус Центр')
   +section('s-interesting', 'light-blue', false)
-    h2.l-section__title.a-font_h2 Интересное
+    +m_title('Интересное')
   +section('s-reviews', 'white', false)
-    h2.l-section__title.a-font_h2 Вместо тысячи слов — посмотрите отзывы
+    +m_title('Вместо тысячи слов — посмотрите отзывы')
   +section('s-smi', 'white', false)
-    h2.l-section__title.a-font_h2 СМИ о нас
+    +m_title('СМИ о нас')
   +section('s-reviews-yandex', 'light-green', false)
-    h2.l-section__title.a-font_h2 Отзывы
+    +m_title('Отзывы')
   +section('s-faq', 'light-blue', false)
-    h2.l-section__title.a-font_h2 Часто задаваемые вопросы
+    +m_title('Часто задаваемые вопросы')
 
 block append scripts
   script(defer src="./js/homepage.js")

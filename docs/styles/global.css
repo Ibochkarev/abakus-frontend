@@ -2130,6 +2130,69 @@ table td {
   background-color: var(--a-color_bg--dark-blue-darker);
 }
 
+.decor__title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 1.875rem;
+  padding: 0.625rem 1.5625rem;
+  line-height: 1.1;
+  text-align: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0.375rem;
+  border-image: url("../img/global/border.svg") 5 0 5 0 repeat repeat;
+}
+
+.decor__title:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-style: solid;
+  border-width: 0.375rem;
+  border-image: url("../img/global/border-ver.svg") 0 5 0 5 repeat round;
+}
+
+.decor__title .b_top {
+  z-index: 10;
+  top: -0.75rem;
+  left: -0.375rem;
+  display: none;
+}
+
+.decor__title .b_top-right {
+  z-index: 10;
+  top: -0.75rem;
+  right: -1.125rem;
+  display: none;
+}
+
+.decor__title .b_bottom {
+  z-index: 10;
+  bottom: -0.75rem;
+  left: -0.375rem;
+  display: none;
+}
+
+.decor__title .b_bottom-right {
+  z-index: 10;
+  right: -1.125rem;
+  bottom: -0.75rem;
+  display: none;
+}
+
+.decor__title-border {
+  position: absolute;
+  width: 0.3125rem;
+  height: 0.3125rem;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='1148' height='110' viewBox='0 0 1148 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1134' width='18' height='18' fill='%2327A3DD'/%3E%3Crect x='1134' y='96' width='14' height='14' fill='%2327A3DD'/%3E%3Crect y='95' width='14' height='14' fill='%2327A3DD'/%3E%3Crect y='2' width='18' height='18' fill='%2327A3DD'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
 .header__top {
   display: none;
   padding: 0.625rem 0;
@@ -2320,6 +2383,27 @@ table td {
   .swiper-container-horizontal .swiper-pagination-bullet {
     max-width: 6.875rem;
   }
+
+  .decor__title .b_top {
+    display: block;
+  }
+
+  .decor__title .b_top-right {
+    display: block;
+  }
+
+  .decor__title .b_bottom {
+    display: block;
+  }
+
+  .decor__title .b_bottom-right {
+    display: block;
+  }
+
+  .decor__title-border {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2334,6 +2418,11 @@ table td {
   .a-button_large {
     height: 6.25rem;
     border-radius: var(--a-borderRadius--x100);
+  }
+
+  .decor__title {
+    margin: 0 auto 2.1875rem;
+    padding: 0.75rem 1.5625rem;
   }
 
   .header__top {
@@ -2377,6 +2466,11 @@ table td {
 
   .swiper-container-horizontal .swiper-pagination-bullet {
     max-width: 12.5rem;
+  }
+
+  .decor__title {
+    margin: 0 auto 3.125rem;
+    padding: 0.9375rem 2.5rem;
   }
 
   .footer {
@@ -2485,6 +2579,11 @@ table td {
 }
 
 @media (max-width: 991px) {
+  .decor__title-border {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
   .footer__info {
     margin-bottom: 3rem;
   }
