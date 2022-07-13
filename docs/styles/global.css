@@ -1,6 +1,8 @@
 :root {
   --a-color_text: #000000;
   --a-color_gray: #666e72;
+  --a-color_dark-blue: #171664;
+  --a-color_blue: #29a4dd;
   --a-color_bg: #fff;
   --a-color_bg--light-blue: #c3e6f5;
   --a-color_bg--light-blue-lighter: hsla(198, 94%, 93%, 1);
@@ -1739,7 +1741,7 @@ button.swiper-pagination-bullet {
   pointer-events: auto;
 }
 
-.swiper-container-horizontal .swiper-pagination {
+.swiper .swiper-pagination {
   position: relative;
   top: 0;
   display: flex;
@@ -1748,7 +1750,7 @@ button.swiper-pagination-bullet {
   margin: 1rem 0 0;
 }
 
-.swiper-container-horizontal .swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
   flex: 1;
   width: 100%;
   max-width: unset;
@@ -1760,13 +1762,13 @@ button.swiper-pagination-bullet {
   opacity: 1;
 }
 
-.swiper-container-horizontal .swiper-pagination-bullet:hover {
+.swiper .swiper-pagination-bullet:hover {
   background: var(--a-color_link);
   cursor: pointer;
 }
 
-.swiper-container-horizontal .swiper-pagination-bullet-active,
-.swiper-container-horizontal .swiper-pagination-bullet-active:hover {
+.swiper .swiper-pagination-bullet-active,
+.swiper .swiper-pagination-bullet-active:hover {
   background: var(--colorSliderActive);
   cursor: default;
 }
@@ -1958,6 +1960,23 @@ table td {
 
 .l-section__title {
   margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.l-section__subtitle {
+  margin: 0 auto 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--a-color_blue);
+}
+
+.l-section__text {
+  max-width: 48.75rem;
+  margin: 0 auto 2.1875rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -1979,28 +1998,24 @@ table td {
   background-color: transparent;
 }
 
-.l-section__title {
-  margin-bottom: 1.5rem;
-}
-
 .--bg-color_white {
-  background-color: var(--a-color_bg);
   color: var(--a-color_text);
+  background-color: var(--a-color_bg);
 }
 
 .--bg-color_light-blue {
-  background-color: var(--a-color_bg--light-blue);
   color: var(--a-color_text);
+  background-color: var(--a-color_bg--light-blue);
 }
 
 .--bg-color_light-green {
-  background-color: var(--a-color_bg--light-green);
   color: var(--a-color_text);
+  background-color: var(--a-color_bg--light-green);
 }
 
 .--bg-color_yellow {
-  background-color: var(--a-color_bg--yellow);
   color: var(--a-color_text);
+  background-color: var(--a-color_bg--yellow);
 }
 
 .a-button {
@@ -2009,7 +2024,7 @@ table td {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.75rem;
+  height: 2.8125rem;
   min-width: 15rem;
   padding: 0 1.5rem;
   text-align: center;
@@ -2130,6 +2145,30 @@ table td {
   background-color: var(--a-color_bg--dark-blue-darker);
 }
 
+.a-button_color--clear-darkblue {
+  color: var(--a-color_bg--dark-blue);
+  border: 0.125rem solid var(--a-color_bg--dark-blue);
+  background-color: transparent;
+}
+
+.a-button_color--clear-darkblue.hover,
+.a-button_color--clear-darkblue:hover {
+  color: var(--a-color_bg);
+  background-color: var(--a-color_bg--dark-blue-lighter);
+}
+
+.a-button_color--clear-darkblue.focus,
+.a-button_color--clear-darkblue:focus {
+  color: var(--a-color_bg);
+  background-color: var(--a-color_bg--dark-blue-lighter);
+}
+
+.a-button_color--clear-darkblue.active,
+.a-button_color--clear-darkblue:active {
+  color: var(--a-color_bg);
+  background-color: var(--a-color_bg--dark-blue-darker);
+}
+
 .decor__title {
   position: relative;
   width: fit-content;
@@ -2191,6 +2230,46 @@ table td {
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg width='1148' height='110' viewBox='0 0 1148 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1134' width='18' height='18' fill='%2327A3DD'/%3E%3Crect x='1134' y='96' width='14' height='14' fill='%2327A3DD'/%3E%3Crect y='95' width='14' height='14' fill='%2327A3DD'/%3E%3Crect y='2' width='18' height='18' fill='%2327A3DD'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
+}
+
+.m-video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.9375rem;
+}
+
+.m-video img {
+  width: 100%;
+  height: auto;
+}
+
+.m-video__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 3.75rem;
+  height: 3.75rem;
+  border: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.5s all ease;
+  background-color: transparent;
+}
+
+.m-video__btn:hover {
+  opacity: 0.7;
+}
+
+.m-video-section .m-video {
+  margin-bottom: 2.1875rem;
+}
+
+.m-video-section__btn {
+  display: block;
+  margin: 0 auto;
 }
 
 .header__top {
@@ -2380,7 +2459,7 @@ table td {
 }
 
 @media (min-width: 575px) {
-  .swiper-container-horizontal .swiper-pagination-bullet {
+  .swiper .swiper-pagination-bullet {
     max-width: 6.875rem;
   }
 
@@ -2411,6 +2490,10 @@ table td {
     font-size: 1.125rem;
   }
 
+  .l-section__text {
+    margin: 0 auto 2.8125rem;
+  }
+
   .a-button {
     height: 4.0625rem;
   }
@@ -2423,6 +2506,16 @@ table td {
   .decor__title {
     margin: 0 auto 2.1875rem;
     padding: 0.75rem 1.5625rem;
+  }
+
+  .m-video__btn {
+    margin-bottom: 2.8125rem;
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .m-video-section .m-video {
+    margin-bottom: 2.8125rem;
   }
 
   .header__top {
@@ -2460,11 +2553,11 @@ table td {
 }
 
 @media (min-width: 992px) {
-  .swiper-container-horizontal .swiper-pagination {
+  .swiper .swiper-pagination {
     margin: 1.5rem 0 0;
   }
 
-  .swiper-container-horizontal .swiper-pagination-bullet {
+  .swiper .swiper-pagination-bullet {
     max-width: 12.5rem;
   }
 
@@ -2564,11 +2657,28 @@ table td {
   .l-section__title {
     margin-bottom: 2.5rem;
   }
+
+  .l-section__subtitle {
+    margin: 0 auto 1.5srem;
+  }
 }
 
 @media (min-width: 1440px) {
-  .swiper-container-horizontal .swiper-pagination-bullet {
+  .swiper .swiper-pagination-bullet {
     max-width: 15rem;
+  }
+
+  .l-section__text {
+    margin: 0 auto 3.75rem;
+    font-size: 1.75rem;
+  }
+
+  .decor__title {
+    margin: 0 auto 4.0625rem;
+  }
+
+  .m-video-section .m-video {
+    margin-bottom: 4.0625rem;
   }
 }
 

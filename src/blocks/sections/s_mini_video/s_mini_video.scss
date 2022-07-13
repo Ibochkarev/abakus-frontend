@@ -1,0 +1,43 @@
+.s-mini-video {
+  &__inner {
+    display: grid;
+    grid-gap: rem(24);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    padding: rem(16);
+    border-radius: rem(10);
+    background-color: var(--a-color_bg--light-green);
+
+    @media (min-width: 768px) {
+      padding: rem(28);
+    }
+
+    &-title {
+      margin-bottom: rem(16);
+      font-family: "Neometric";
+      font-size: rem(16);
+      font-weight: 600;
+
+      @media (min-width: 768px) {
+        margin-bottom: rem(24);
+        font-size: rem(24);
+      }
+    }
+
+    &-link {
+      cursor: pointer;
+      font-weight: 400;
+      color: var(--a-color_blue);
+    }
+  }
+}

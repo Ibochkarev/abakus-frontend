@@ -7,7 +7,6 @@ module.exports = {
             "jQuery": "jquery",
             "window.jQuery": "jquery",
             "jquery": "jquery",
-            "window.jquery": "jquery",
             "$": "jquery",
             "window.$": "jquery"
         })
@@ -20,6 +19,8 @@ module.exports = {
     entry: {
         global: "./src/js/global.js",
         homepage: "./src/js/homepage.js",
+        programs: "./src/js/programs.js",
+        arifmetica: "./src/js/arifmetica.js",
     },
 
     output: {

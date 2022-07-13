@@ -21,6 +21,10 @@
       padding: rem(12) rem(25);
     }
 
+    @media (min-width: 1440px) {
+      margin: 0 auto rem(65);
+    }
+
     &:after {
       position: absolute;
       top: 0;

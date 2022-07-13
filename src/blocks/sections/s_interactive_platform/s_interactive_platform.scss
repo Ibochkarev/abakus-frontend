@@ -1,0 +1,57 @@
+.s-interactive-platform {
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      gap: rem(40);
+    }
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__image {
+    position: relative;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 40%;
+    }
+
+    img {
+      z-index: 2;
+      position: relative;
+      width: 100%;
+      height: auto;
+      max-width: rem(450);
+    }
+
+    svg {
+      z-index: 1;
+      position: absolute;
+      top: rem(-80);
+      right: 0;
+    }
+  }
+
+  &__info {
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+  }
+
+  &__text {
+    margin-bottom: rem(45);
+    font-size: rem(16);
+    line-height: 1.4;
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(60);
+      font-size: rem(22);
+    }
+  }
+}

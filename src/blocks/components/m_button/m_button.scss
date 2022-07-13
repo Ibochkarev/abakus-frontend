@@ -4,7 +4,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: rem(60);
+  height: rem(45);
   min-width: rem(240);
   padding: 0 rem(24);
   text-align: center;
@@ -130,6 +130,30 @@
 
       &.active,
       &:active {
+        background-color: var(--a-color_bg--dark-blue-darker);
+      }
+    }
+
+    &--clear-darkblue {
+      color: var(--a-color_bg--dark-blue);
+      border: rem(2) solid var(--a-color_bg--dark-blue);
+      background-color: transparent;
+
+      &.hover,
+      &:hover {
+        color: var(--a-color_bg);
+        background-color: var(--a-color_bg--dark-blue-lighter);
+      }
+
+      &.focus,
+      &:focus {
+        color: var(--a-color_bg);
+        background-color: var(--a-color_bg--dark-blue-lighter);
+      }
+
+      &.active,
+      &:active {
+        color: var(--a-color_bg);
         background-color: var(--a-color_bg--dark-blue-darker);
       }
     }

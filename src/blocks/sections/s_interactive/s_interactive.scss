@@ -1,0 +1,23 @@
+.s-interactive {
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(45);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(60);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: rem(900);
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

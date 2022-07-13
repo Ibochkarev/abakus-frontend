@@ -1,0 +1,5 @@
+mixin m_video(image, video_link)
+  .m-video
+    img(src!= image, alt="")
+    button.m-video__btn(type="button" data-fancybox="" data-thumb="" href!= video_link)
+      img(src="/img/global/icon-play.svg" alt="play")

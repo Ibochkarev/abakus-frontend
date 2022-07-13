@@ -1,0 +1,18 @@
+.m-video-section {
+  .m-video {
+    margin-bottom: rem(35);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(45);
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: rem(65);
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

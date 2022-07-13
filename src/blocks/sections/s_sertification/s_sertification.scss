@@ -1,0 +1,40 @@
+.s-sertification {
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-gap: rem(18);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .l-section__title,
+  .l-section__text {
+    text-align: left;
+  }
+
+  &__btn {
+    @media (max-width: 768px) {
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: rem(-37);
+
+    @media (min-width: 1200px) {
+      margin-bottom: rem(-60);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: rem(590);
+    }
+  }
+}

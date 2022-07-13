@@ -1,0 +1,27 @@
+-
+  const videoList = [
+    {
+      title: 'Что такое ментальная арифметика',
+      link: 'https://www',
+    },
+    {
+      title: 'Короткий ролик с учениками Абакус',
+      link: 'https://www',
+    },
+    {
+      title: 'О компании в газете Ведомости',
+      type: 'link',
+      link: 'https://www',
+    },
+  ]
+
++section('s-mini-video', 'white', false)
+  .s-mini-video__inner
+    each item in videoList
+      .s-mini-video__item
+        .s-mini-video__item-title!= item.title
+        if item.type == 'link'
+          a.s-mini-video__item-link.a-font_button(href!= item.link) Читать статью
+        else
+          a.s-mini-video__item-link.a-font_button(data-fancybox data-thumb="" href!= item.link) Смотреть видео
+

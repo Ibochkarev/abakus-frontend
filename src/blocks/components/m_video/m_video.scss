@@ -1,0 +1,36 @@
+.m-video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: rem(15);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: rem(60);
+    height: rem(60);
+    border: 0;
+    transform: translate(-50%, -50%);
+    transition: 0.5s all ease;
+    background-color: transparent;
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(45);
+      width: rem(100);
+      height: rem(100);
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

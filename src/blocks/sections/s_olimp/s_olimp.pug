@@ -1,0 +1,12 @@
++section('s-olimp', 'light-blue', false)
+  .s-olimp__inner
+    .s-olimp__image
+      img(src="./img/s-olimp/image.svg", alt="")
+    .s-olimp__info
+      if olimpDate == true
+        .s-olimp__date 21-22 мая 2022
+      .s-olimp__title.a-font_h3 МЕЖДУНАРОДНАЯ ОНЛАЙН ОЛИМПИАДА АБАКУС
+      .s-olimp__text По ментальной арифметике и необычной математике
+      .s-olimp__buttons
+        +mButton('s-olimp__btn', 'dark-blue', '', 'Стать чемпионом!', '')
+        +mButton('s-olimp__btn', 'clear-darkblue', 'link', 'Личный кабинет', '')
