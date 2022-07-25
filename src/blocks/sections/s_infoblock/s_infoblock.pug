@@ -1,0 +1,27 @@
+-
+  const infoItems = [
+    {
+      title: 'Эффективная<br> методика',
+      text: 'Разработана профессиональными методистами и специалистами, более 1000 отобранных развивающих заданий и упражнений',
+      image: './img/s-infoblock/1.svg',
+    },
+    {
+      title: 'Ассоциация PAMA<br> Global',
+      text: 'Эксклюзивные представители России в международной ассоциации PAMA Global, в состав которой входят около 30 стран мира',
+      image: './img/s-infoblock/2.svg',
+    },
+    {
+      title: 'Международные<br> олимпиады',
+      text: 'Мы организуем Всероссийские олимпиады по ментальной арифметике, а наши ученики становятся победителями и призерами международных олимпиад PAMA Global',
+      image: './img/s-infoblock/3.svg',
+    },
+  ];
+
++section('s-infoblock', 'white', false)
+  .s-infoblock__items
+    each item in infoItems
+      .s-infoblock__item
+        .s-infoblock__item-image
+          img(src!=item.image, alt="")
+        .s-infoblock__item-title!= item.title
+        .s-infoblock__item-text.a-font_text!= item.text

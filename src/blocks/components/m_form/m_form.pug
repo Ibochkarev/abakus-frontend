@@ -1,0 +1,15 @@
+mixin m_form(bgColor, titleForm, subtitleForm)
+  +section('s-form', bgColor, false)
+    .s-form__inner
+      .s-form__content
+        .s-form__title!= titleForm
+        .s-form__subtitle!= subtitleForm
+        form.m-form(action="")
+          label.m-form__label
+            input.m-form__input(type="text", placeholder="Имя")
+          label.m-form__label
+            input.m-form__input(type="email", placeholder="Электронная почта")
+          label.m-form__label
+            input.m-form__input(type="tel", placeholder="Телефон")
+          +mButton('m-form__btn', 'dark-blue', '', 'Отправить', '')
+

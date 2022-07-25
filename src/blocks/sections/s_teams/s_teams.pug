@@ -1,0 +1,63 @@
+-
+  const teamsItems = [
+    {
+      name: 'Рустам Багаутдинов',
+      text: 'Генеральный директор Абакус центра',
+      photo: './img/s-teams/1.jpg',
+    },
+    {
+      name: 'Марек Заремба-Пайк',
+      text: 'Руководитель отдела маркетинга',
+      photo: './img/s-teams/2.jpg',
+    },
+    {
+      name: 'Рамина Байгулова',
+      text: 'Руководитель отдела продаж',
+      photo: './img/s-teams/3.jpg',
+    },
+    {
+      name: 'Анна Невмержицкая',
+      text: 'Методист Абакус центра',
+      photo: './img/s-teams/4.jpg',
+    },
+    {
+      name: 'Артур Ишмухаметов',
+      text: 'Менеджер по работе с партнерами и логистике',
+      photo: './img/s-teams/5.jpg',
+    },
+    {
+      name: 'Анвар Багаутдинов',
+      text: 'Директор по развитию международных проектов',
+      photo: './img/s-teams/6.jpg',
+    },
+    {
+      name: 'Ильназ Исмагилов',
+      text: 'Генеральный директор Абакус центра',
+      photo: './img/s-teams/7.jpg',
+    },
+    {
+      name: 'Эльвира Лаптева',
+      text: 'Руководитель центров<br> в государственных школах г. Москвы',
+      photo: './img/s-teams/8.jpg',
+    },
+    {
+      name: 'Лилия Зейб',
+      text: 'Автор курса по семинарам',
+      photo: './img/s-teams/9.jpg',
+    },
+    {
+      name: 'Гульгена Газизова',
+      text: 'Методист Абакус центра и куратор педагогов',
+      photo: './img/s-teams/10.jpg',
+    },
+  ];
+
++section('s-teams', 'white', false)
+  .s-teams__items
+    each item in teamsItems
+      .s-teams__item
+        .s-teams__item-photo
+          img(src!= item.photo, alt="")
+        .s-teams__item-info
+          .s-teams__item-name.a-font_text!= item.name
+          .s-teams__item-text.a-font_text!= item.text

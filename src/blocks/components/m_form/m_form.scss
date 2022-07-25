@@ -1,0 +1,46 @@
+.s-form {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: rem(830);
+    padding: rem(50) rem(100);
+    text-align: center;
+    background: var(--a-color_bg--light-blue);
+    border: rem(6) solid var(--a-color_bg--blue);
+    border-radius: rem(24);
+  }
+
+  &__title {
+    font-family: "Neometric";
+    font-size: rem(45);
+    line-height: 1.28;
+  }
+
+  &__subtitle {
+    margin-bottom: rem(60);
+    font-family: "Neometric";
+    font-size: rem(32);
+    line-height: 1.28;
+  }
+}
+
+.m-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__label {
+    width: 100%;
+    margin-bottom: rem(25);
+  }
+
+  &__input {
+    width: 100%;
+  }
+}

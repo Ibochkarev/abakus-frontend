@@ -23,7 +23,7 @@
     color: var(--a-color_blue);
 
     @media (min-width: 1200px) {
-      margin: 0 auto rem(24s);
+      margin: 0 auto rem(24);
     }
   }
 
@@ -40,7 +40,7 @@
 
     @media (min-width: 1440px) {
       margin: 0 auto rem(60);
-      font-size: rem(28);
+      font-size: rem(22);
     }
   }
 

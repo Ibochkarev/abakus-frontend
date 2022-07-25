@@ -1,0 +1,41 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Ментальная арифметика"
+  -
+    const statisticItems = [
+      {
+        title: '31 870',
+        text: 'Учеников<br> с 2015 года',
+      },
+      {
+        title: '96',
+        text: 'Призеров<br> олимпиад PAMA',
+      },
+      {
+        title: '25',
+        text: 'Стран,<br> где мы работаем',
+      },
+    ];
+  - const statisticsColor = 'white'
+
+block append head
+  link(rel="stylesheet" href="./styles/arithmetic.css")
+
+block content
+  +section('s-pagetitle', 'white', false)
+    +m_title('Ментальная арифметика онлайн', 'h1')
+  +m_video_section('Как проходят занятия онлайн', '', 'Персональный тренер в сочетании с интерактивной платформой пробудит интерес ребенка к обучению', './img/s-about/cover.jpg', '', 'light-green')
+  include ../../blocks/sections/s_infoblock/s_infoblock.pug
+  +m_content_block('yellow', true, 'Что получит Ваш ребенок?', './img/s-content-block/01.png', 'Польза ментальной арифметики для детей', '<ul><li>Польза ментальной арифметики для детей.</li><li>Гармоничное развитие мозга и гибкость мышления</li><li>Повышение самооценки</li><li>Развитие памяти и внимания</li><li>Устный счет и международные олимпиады</li><li>Развитие пространственного мышления</li><li>Улучшение успеваемости в школе</li><li>Дружелюбная обстановка на занятиях</li></ul>', true, 'dark-blue', 'Оставить заявку')
+  +m_content_block('white', false, 'Развитие математического<br> мышления', './img/s-content-block/02.png', 'Программа обучения также включает в себя Необычную математику Абакус', '<ul><li>Гармоничное развитие мозга и гибкость мышления</li><li>Повышение самооценки</li><li>Развитие памяти и внимания</li><li>Устный счет и международные олимпиады</li><li>Развитие пространственного мышления</li><li>Улучшение успеваемости в школе</li><li>Дружелюбная обстановка на занятиях</li></ul>', false, '', '')
+  include ../../blocks/sections/s_statistics_online/s_statistics_online.pug
+  include ../../blocks/sections/s_polza/s_polza.pug
+  include ../../blocks/sections/s_interactive_platform/s_interactive_platform.pug
+  include ../../blocks/sections/s_schedule/s_schedule.pug
+  include ../../blocks/sections/s_interactive/s_interactive.pug
+  include ../../blocks/sections/s_mini_video/s_mini_video.pug
+  +m_form('white', 'Оставить заявку', 'на БЕСПЛАТНЫЙ пробный урок')
+
+block append scripts
+  script(defer src="./js/arithmetic.js")

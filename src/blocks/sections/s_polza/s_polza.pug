@@ -1,0 +1,27 @@
+-
+  const polzaItems = [
+    {
+      title: '57%',
+      text: 'Улучшение<br> успеваемости',
+    },
+    {
+      title: '65%',
+      text: 'Улучшение<br> творческих<br> способностей',
+    },
+    {
+      title: '73%',
+      text: 'Улучшение<br> памяти<br> внимания',
+    },
+    {
+      title: '59%',
+      text: 'Повышение<br> уверенности<br> в себе',
+    },
+  ];
+
++section('s-polza', 'white', false)
+  +m_title('Польза ментальной арифметики')
+  .l-section__text Опрос <strong>900 родителей</strong> наших учеников о пользе занятий Абакус
+  .s-polza__items
+    each item in polzaItems
+      .s-polza__item
+        +m_tag(item.title, item.text)

@@ -75,6 +75,14 @@ h6 {
     }
   }
 
+  &_text {
+    font-size: rem(16);
+
+    @media (min-width: 768px) {
+      font-size: rem(22);
+    }
+  }
+
   &_m {
     font-size: rem(16);
     line-height: rem(20);

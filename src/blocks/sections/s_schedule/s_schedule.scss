@@ -1,0 +1,23 @@
+.s-schedule {
+  &__description {
+    max-width: rem(960);
+    margin: 0 auto;
+    margin-bottom: rem(40);
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(70);
+    }
+
+    &-title {
+      margin-bottom: rem(25);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

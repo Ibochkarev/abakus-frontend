@@ -5,7 +5,9 @@ PageList:
     ready: 1
   - file: programs.html
     ready: 90
-  - file: arifmetica.html
+  - file: arithmetic.html
+    ready: 10
+  - file: teams.html
     ready: 10
   - file: 404.html
     ready: 1

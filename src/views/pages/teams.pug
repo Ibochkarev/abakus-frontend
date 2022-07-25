@@ -1,0 +1,15 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Наша команда"
+
+block append head
+  link(rel="stylesheet" href="./styles/teams.css")
+
+block content
+  +section('s-pagetitle', 'white', false)
+    +m_title('Наша команда', 'h1')
+  include ../../blocks/sections/s_teams/s_teams.pug
+
+block append scripts
+  script(defer src="./js/teams.js")

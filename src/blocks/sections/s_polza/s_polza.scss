@@ -1,0 +1,11 @@
+.s-polza {
+  &__items {
+    display: grid;
+    grid-gap: rem(60);
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

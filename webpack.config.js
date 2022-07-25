@@ -20,7 +20,8 @@ module.exports = {
         global: "./src/js/global.js",
         homepage: "./src/js/homepage.js",
         programs: "./src/js/programs.js",
-        arifmetica: "./src/js/arifmetica.js",
+        arithmetic: "./src/js/arithmetic.js",
+        teams: "./src/js/arithmetic.js",
     },
 
     output: {

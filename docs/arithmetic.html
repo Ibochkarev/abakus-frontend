@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ментальная арифметика</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/arithmetic.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__top">
+          <div class="l-wide">
+            <div class="header__top-wrapper">
+              <div class="header__name a-font_xs">Международная сеть школ Абакус центр</div>
+              <div class="header__contact">
+                <div class="header__contact-item">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="7.5" stroke="#2E8FBC"></circle>
+                    <path d="M8 4V9.6L11.2 10.8" stroke="#2E8FBC"></path>
+                  </svg><span class="a-font_xs">пн-вск 9:00 - 19:00</span>
+                </div>
+                <div class="header__contact-item">
+                  <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1V12H17V1M1 1H17M1 1L8.74194 7.36842L17 1" stroke="#2E8FBC"></path>
+                  </svg><a class="a-font_xs" href="mailto:abakus@abakus-center.ru">abakus@abakus-center.ru</a>
+                </div>
+              </div>
+              <div class="header__phone"><a class="header__phone-link a-font_s" href="tel:+88005553465">8 800 555-34-65</a><span class="a-font_xs">(звонок по России бесплатный)</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="l-wide">
+            <div class="header__bottom-wrapper">
+              <div class="header__logo"><img src="./img/global/logo.svg" alt=""></div>
+              <nav class="header__menu"></nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <section class="l-section s-pagetitle --bg-color_white">
+        <div class="l-section__outer s-pagetitle__outer">
+          <div class="l-wide l-section__wrapper s-pagetitle__wrapper">
+            <h2 class="l-section__title a-font_h2 decor__title">Ментальная арифметика онлайн<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h2>
+          </div>
+        </div>
+      </section>
+      <section class="l-section m-video-section --bg-color_light-green">
+        <div class="l-section__outer m-video-section__outer">
+          <div class="l-wide l-section__wrapper m-video-section__wrapper">
+            <h2 class="l-section__title a-font_h2 decor__title">Как проходят занятия онлайн<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h2>
+            <div class="l-section__text">Персональный тренер в сочетании с интерактивной платформой пробудит интерес ребенка к обучению</div>
+            <div class="m-video"><img src="./img/s-about/cover.jpg" alt=""/>
+              <button class="m-video__btn" type="button" data-fancybox="" data-thumb="" href="https://www.youtube.com/watch?v=zI7TJpLjJUI"><img src="./img/global/icon-play.svg" alt="play"/></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-infoblock --bg-color_white">
+        <div class="l-section__outer s-infoblock__outer">
+          <div class="l-wide l-section__wrapper s-infoblock__wrapper">
+            <div class="s-infoblock__items">
+              <div class="s-infoblock__item">
+                <div class="s-infoblock__item-image"><img src="./img/s-infoblock/1.svg" alt=""></div>
+                <div class="s-infoblock__item-title">Эффективная<br> методика</div>
+                <div class="s-infoblock__item-text a-font_text">Разработана профессиональными методистами и специалистами, более 1000 отобранных развивающих заданий и упражнений</div>
+              </div>
+              <div class="s-infoblock__item">
+                <div class="s-infoblock__item-image"><img src="./img/s-infoblock/2.svg" alt=""></div>
+                <div class="s-infoblock__item-title">Ассоциация PAMA<br> Global</div>
+                <div class="s-infoblock__item-text a-font_text">Эксклюзивные представители России в международной ассоциации PAMA Global, в состав которой входят около 30 стран мира</div>
+              </div>
+              <div class="s-infoblock__item">
+                <div class="s-infoblock__item-image"><img src="./img/s-infoblock/3.svg" alt=""></div>
+                <div class="s-infoblock__item-title">Международные<br> олимпиады</div>
+                <div class="s-infoblock__item-text a-font_text">Мы организуем Всероссийские олимпиады по ментальной арифметике, а наши ученики становятся победителями и призерами международных олимпиад PAMA Global</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section m-content-block --bg-color_yellow m-content-block--reverse">
+        <div class="l-section__outer m-content-block__outer">
+          <div class="l-wide l-section__wrapper m-content-block__wrapper">
+            <h1 class="l-section__title a-font_h2 decor__title">Что получит Ваш ребенок?<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h1>
+            <div class="m-content-block__inner">
+              <div class="m-content-block__col">
+                <div class="m-content-block__image"><img src="./img/s-content-block/01.png" alt=""/></div>
+              </div>
+              <div class="m-content-block__col">
+                <div class="m-content-block__info">
+                  <div class="m-content-block__title a-font_text">Польза ментальной арифметики для детей</div>
+                  <div class="m-content-block__text a-font_text"><ul><li>Польза ментальной арифметики для детей.</li><li>Гармоничное развитие мозга и гибкость мышления</li><li>Повышение самооценки</li><li>Развитие памяти и внимания</li><li>Устный счет и международные олимпиады</li><li>Развитие пространственного мышления</li><li>Улучшение успеваемости в школе</li><li>Дружелюбная обстановка на занятиях</li></ul></div>
+                  <button class="a-button a-font_button m-content-block__btn a-button_color--dark-blue"><span>Оставить заявку</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section m-content-block --bg-color_white">
+        <div class="l-section__outer m-content-block__outer">
+          <div class="l-wide l-section__wrapper m-content-block__wrapper">
+            <h1 class="l-section__title a-font_h2 decor__title">Развитие математического<br> мышления<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h1>
+            <div class="m-content-block__inner">
+              <div class="m-content-block__col">
+                <div class="m-content-block__image"><img src="./img/s-content-block/02.png" alt=""/></div>
+              </div>
+              <div class="m-content-block__col">
+                <div class="m-content-block__info">
+                  <div class="m-content-block__title a-font_text">Программа обучения также включает в себя Необычную математику Абакус</div>
+                  <div class="m-content-block__text a-font_text"><ul><li>Гармоничное развитие мозга и гибкость мышления</li><li>Повышение самооценки</li><li>Развитие памяти и внимания</li><li>Устный счет и международные олимпиады</li><li>Развитие пространственного мышления</li><li>Улучшение успеваемости в школе</li><li>Дружелюбная обстановка на занятиях</li></ul></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-statistics-online --bg-color_white">
+        <div class="l-section__outer s-statistics-online__outer">
+          <div class="l-wide l-section__wrapper s-statistics-online__wrapper">
+            <div class="s-statistics-online__items">
+              <div class="s-statistics-online__item">
+                <div class="m-tag">
+                  <div class="m-tag__title">31 870</div>
+                  <div class="m-tag__text">Учеников<br> с 2015 года</div>
+                </div>
+              </div>
+              <div class="s-statistics-online__item">
+                <div class="m-tag">
+                  <div class="m-tag__title">96</div>
+                  <div class="m-tag__text">Призеров<br> олимпиад PAMA</div>
+                </div>
+              </div>
+              <div class="s-statistics-online__item">
+                <div class="m-tag">
+                  <div class="m-tag__title">25</div>
+                  <div class="m-tag__text">Стран,<br> где мы работаем</div>
+                </div>
+              </div>
+              <div class="s-statistics-online__item"><img src="./img/s-statistics-online/brain.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-polza --bg-color_white">
+        <div class="l-section__outer s-polza__outer">
+          <div class="l-wide l-section__wrapper s-polza__wrapper">
+            <h1 class="l-section__title a-font_h2 decor__title">Польза ментальной арифметики<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h1>
+            <div class="l-section__text">Опрос <strong>900 родителей</strong> наших учеников о пользе занятий Абакус</div>
+            <div class="s-polza__items">
+              <div class="s-polza__item">
+                <div class="m-tag">
+                  <div class="m-tag__title">57%</div>
+                  <div class="m-tag__text">Улучшение<br> успеваемости</div>
+                </div>
+              </div>
+              <div class="s-polza__item">
+                <div class="m-tag">
+                  <div class="m-tag__title">65%</div>
+                  <div class="m-tag__text">Улучшение<br> творческих<br> способностей</div>
+                </div>
+              </div>
+              <div class="s-polza__item">
+                <div class="m-tag">
+                  <div class="m-tag__title">73%</div>
+                  <div class="m-tag__text">Улучшение<br> памяти<br> внимания</div>
+                </div>
+              </div>
+              <div class="s-polza__item">
+                <div class="m-tag">
+                  <div class="m-tag__title">59%</div>
+                  <div class="m-tag__text">Повышение<br> уверенности<br> в себе</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-interactive-platform --bg-color_yellow">
+        <div class="l-section__outer s-interactive-platform__outer">
+          <div class="l-wide l-section__wrapper s-interactive-platform__wrapper">
+            <h1 class="l-section__title a-font_h2 decor__title">Интерактивная платформа<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h1>
+            <div class="s-interactive-platform__inner">
+              <div class="s-interactive-platform__info">
+                <div class="s-interactive-platform__text">Мы разработали и постоянно совершенствуем онлайн-тренажеры для обучения детей с элементами геймификации.Абакус центр использует IT-решения для повышения эффективности обучения детей. Наши педагоги используют разработанную нами онлайн-платформу на занятиях, а дети с удовольствием тренируются дома, используя WEB-версию платформы.</div>
+                <button class="a-button a-font_button s-interactive-platform__btn a-button_color--blue"><span>Получить предложение</span></button>
+              </div>
+              <div class="s-interactive-platform__image"><img src="./img/s-interactive-platform/image.jpg" alt=""><svg width="216" height="219" viewBox="0 0 216 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M200.02 56.4522L176.648 89.3475L215.334 103.988L179.881 122.44L209.416 152.616L168.906 152.969L183.44 192.703L145.895 174.889L142.551 216.311L115.408 183.857L94.846 218.763L83.4807 178.097L49.7748 199.574L56.4384 158.75L16.2639 162.544L39.6367 129.649L0.950635 115.008L36.4033 96.5563L6.86797 66.3806L47.3786 66.027L32.8439 26.2931L70.389 44.1077L73.7336 2.68544L100.877 35.1398L121.438 0.233346L132.804 40.8995L166.51 19.4225L159.846 60.246L200.02 56.4522Z" fill="#C3E6F5"/>
+</svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-schedule --bg-color_light-green">
+        <div class="l-section__outer s-schedule__outer">
+          <div class="l-wide l-section__wrapper s-schedule__wrapper">
+            <h2 class="l-section__title a-font_h2 decor__title">Гибкое расписание занятий<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h2>
+            <div class="s-schedule__description a-font_text">
+              <div class="s-schedule__description-title">Планируйте онлайн-уроки в удобное время в любом месте</div>
+              <p>Занятия по ментальной арифметике теперь стали еще доступнее. Вы можете постигать уровни Абакус центра, не выходя из дома — в любое удобное время в любом мест.</p>
+              <p>Вы можете оставить заявку, и наши менеджеры подберут подходящее Вам время и назначат пробный урок с педагогом. Вы не тратите время на дорогу. Ребенок занимается самостоятельно в уютной домашней обстановке без вовлечения родителя.</p>
+            </div>
+            <button class="a-button a-font_button s-schedule__btn a-button_color--blue"><span>Оставить заявку</span></button>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-interactive --bg-color_light-green">
+        <div class="l-section__outer s-interactive__outer">
+          <div class="l-wide l-section__wrapper s-interactive__wrapper">
+            <h1 class="l-section__title a-font_h2 decor__title">Подробнее о нас<span class="decor__title-border b_top"></span><span class="decor__title-border b_top-right"></span><span class="decor__title-border b_bottom"></span><span class="decor__title-border b_bottom-right"></span></h1>
+            <div class="l-section__text">Узнайте больше о методике Абакус центра и пройдите ознакомительный урок</div>
+            <div class="s-interactive__image"><img src="./img/s-interactive/cover.svg" alt=""></div>
+            <button class="a-button a-font_button s-interactive__btn a-button_color--blue"><span>Пройдите интерактивный урок</span></button>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-mini-video --bg-color_white">
+        <div class="l-section__outer s-mini-video__outer">
+          <div class="l-wide l-section__wrapper s-mini-video__wrapper">
+            <div class="s-mini-video__inner">
+              <div class="s-mini-video__item">
+                <div class="s-mini-video__item-title">Что такое ментальная арифметика</div><a class="s-mini-video__item-link a-font_button" data-fancybox data-thumb="" href="https://www.youtube.com/watch?v=zI7TJpLjJUI">Смотреть видео</a>
+              </div>
+              <div class="s-mini-video__item">
+                <div class="s-mini-video__item-title">Короткий ролик с учениками Абакус</div><a class="s-mini-video__item-link a-font_button" data-fancybox data-thumb="" href="https://www.youtube.com/watch?v=zI7TJpLjJUI">Смотреть видео</a>
+              </div>
+              <div class="s-mini-video__item">
+                <div class="s-mini-video__item-title">О компании в газете Ведомости</div><a class="s-mini-video__item-link a-font_button" href="https://www.youtube.com/watch?v=zI7TJpLjJUI">Читать статью</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section s-form --bg-color_white">
+        <div class="l-section__outer s-form__outer">
+          <div class="l-wide l-section__wrapper s-form__wrapper">
+            <div class="s-form__inner">
+              <div class="s-form__content">
+                <div class="s-form__title">Оставить заявку</div>
+                <div class="s-form__subtitle">на БЕСПЛАТНЫЙ пробный урок</div>
+                <form class="m-form" action="">
+                  <label class="m-form__label">
+                    <input class="m-form__input" type="text" placeholder="Имя"/>
+                  </label>
+                  <label class="m-form__label">
+                    <input class="m-form__input" type="email" placeholder="Электронная почта"/>
+                  </label>
+                  <label class="m-form__label">
+                    <input class="m-form__input" type="tel" placeholder="Телефон"/>
+                  </label>
+                  <button class="a-button a-font_button m-form__btn a-button_color--dark-blue"><span>Отправить</span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="l-wide">
+        <div class="footer__top">
+          <div class="footer__col"><a class="footer__logo" href="#"><img src="./img/global/logo-footer.svg" alt="" loading="lazy"></a>
+            <nav class="footer__menu">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">О нас</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">Программы</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">Цены</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">Новости</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">Статьи</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">Полезное</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">Магазин</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="http://#">Контакты</a></li>
+            </nav>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-head">
+              <div class="footer__title">Главный офис</div>
+              <div class="footer__address a-font_m">г. Москва, м. Курская,<br>ул. Земляной Вал, д. 9, 4 этаж</div>
+            </div>
+            <div class="footer__info">
+              <div class="footer__info-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8" cy="8" r="7.5" stroke="#2E8FBC"></circle>
+                  <path d="M8 4V9.6L11.2 10.8" stroke="#2E8FBC"></path>
+                </svg><span class="a-font_m">пн-вск 9:00 - 19:00</span>
+              </div>
+              <div class="footer__info-item">
+                <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1V12H17V1M1 1H17M1 1L8.74194 7.36842L17 1" stroke="#2E8FBC"></path>
+                </svg><a class="a-font_m" href="mailto:abakus@abakus-center.ru">abakus@abakus-center.ru</a>
+              </div>
+            </div><a class="footer__title footer__title-fillial" href="#">Филиалы</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-head">
+              <div class="footer__phone"><a class="footer__phone-link" href="tel:88482687236">8 (848) 268-72-36</a>
+                <div class="footer__phone-text a-font_m">Звонок по России беслатный</div>
+              </div>
+            </div>
+            <div class="footer__social"><a class="footer__social-item" href="#" target="_blank" rel="noopener"><span class="footer__social-icon footer__social-icon--instagram"></span></a><a class="footer__social-item" href="#" target="_blank" rel="noopener"><span class="footer__social-icon footer__social-icon--facebook"></span></a><a class="footer__social-item" href="#" target="_blank" rel="noopener"><span class="footer__social-icon footer__social-icon--youtube"></span></a><a class="footer__social-item" href="#" target="_blank" rel="noopener"><span class="footer__social-icon footer__social-icon--vkontakte"></span></a></div>
+            <div class="footer__apps"><a class="footer__apps-item" href="#" target="_blank" rel="noopener"><img src="./img/global/app-store.svg" alt=""></a><a class="footer__apps-item" href="#" target="_blank" rel="noopener"><img src="./img/global/google-play.svg" alt=""></a></div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyrite a-font_m">Copyright © 2011-2022 All Rights Reserved.<br>Международная сеть школ Абакус Центр<br>117556 г. Москва, ул. Чонгарский бульвар, д. 18, корп. А<br>ИНН: 7726701560, ОГРН: 1127746566463</div>
+          <div class="footer__legal"><a class="footer__legal-text a-font_m" href="#">Пользовательское соглашение</a></div>
+        </div>
+      </div>
+    </footer>
+    <script defer src="./js/vendor.js"></script>
+    <script defer src="./js/global.js"></script>
+    <script defer src="./js/arithmetic.js"></script>
+  </body>
+</html>

@@ -6,4 +6,5 @@ mixin m_video_section(title, subtitle, text, image, btnText, bgColor)
     if text
       .l-section__text!= text
     +m_video(image, 'https://www.youtube.com/watch?v=zI7TJpLjJUI')
-    +mButton('m-video-section__btn', 'blue', '', btnText, '')
+    if btnText
+      +mButton('m-video-section__btn', 'blue', '', btnText, '')

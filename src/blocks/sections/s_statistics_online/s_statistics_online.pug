@@ -1,0 +1,7 @@
++section('s-statistics-online', statisticsColor, false)
+  .s-statistics-online__items
+    each item in statisticItems
+      .s-statistics-online__item
+        +m_tag(item.title, item.text)
+    .s-statistics-online__item
+      img(src="./img/s-statistics-online/brain.svg", alt="")

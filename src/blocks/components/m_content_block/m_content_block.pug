@@ -1,0 +1,14 @@
+mixin m_content_block(bgColor, contentPositionReverse, title, contentImage, contentTitle, contentText, contentButton, contentButtonColor, contentButtonText)
+  +section('m-content-block', bgColor, false)(class=(contentPositionReverse == true) ? 'm-content-block--reverse' : '')
+    +m_title(title)
+    .m-content-block__inner
+      .m-content-block__col
+        .m-content-block__image
+          img(src!= contentImage, alt="")
+      .m-content-block__col
+        .m-content-block__info
+          if contentTitle
+            .m-content-block__title.a-font_text!= contentTitle
+          .m-content-block__text.a-font_text!= contentText
+          if contentButton
+            +mButton('m-content-block__btn', contentButtonColor ? contentButtonColor : 'blue', '', contentButtonText, '')
